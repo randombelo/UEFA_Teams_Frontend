@@ -122,23 +122,12 @@ node --experimental-default-type=module --check js/pages/teams.js
 
 ## Backend (proyecto hermano)
 
-La API vive en el repositorio independiente [`../UEFA_Teams/`](../UEFA_Teams/).
+La API vive en el repositorio independiente [`https://github.com/randombelo/UEFA_Teams`](https://github.com/randombelo/UEFA_Teams/).
 
 - **Arrancar el backend**: `uvicorn main:app --reload` desde `UEFA_Teams` → `http://127.0.0.1:8000`.
 - **Documentación Swagger**: `http://127.0.0.1:8000/docs`.
 - La URL que consume este frontend se configura en `js/config/endpointsConfig.js` (ver sección *Configuración de la API*).
 - CORS del backend abierto al 100 %: el frontend puede servirse desde cualquier origen o puerto.
-
-## Capturas
-
-> Las capturas se añaden manualmente en esta carpeta. Reemplaza la ruta de cada una por tu imagen y ajusta si hace falta.
-
-| Descripción | Imagen |
-|-------------|--------|
-| Home con estado de la API | `docs/screenshots/home.png` |
-| Listado de equipos con competiciones | `docs/screenshots/teams.png` |
-| Listado de jugadores con filtro por club | `docs/screenshots/players.png` |
-| Página de competiciones | `docs/screenshots/competitions.png` |
 
 ## Troubleshooting
 
